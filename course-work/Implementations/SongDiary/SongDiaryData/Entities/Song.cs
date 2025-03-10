@@ -1,6 +1,7 @@
 ﻿using SongDiaryData.Entities.Enum;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -11,7 +12,9 @@ namespace SongDiaryData.Entities
 {
     public class Song:BaseEntity
     {
+        [MaxLength(100)]
         public required string Title { get; set; }
+        [MinLength(50)]
         public required string Lyrics { get; set; }
 
         public DateTime ReleaseDate { get; set; }

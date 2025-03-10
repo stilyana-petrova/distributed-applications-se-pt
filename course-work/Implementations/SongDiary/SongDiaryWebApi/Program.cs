@@ -1,7 +1,13 @@
 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using SongDiaryApplicationServices.Implementation;
+using SongDiaryApplicationServices.Interfaces;
 using SongDiaryData.Context;
 using System.Reflection;
+using System.Text;
 
 namespace SongDiaryWebApi
 {
@@ -25,7 +31,36 @@ namespace SongDiaryWebApi
                 options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFileName));
             });
 
+            string tokenTokey = builder.Configuration["Authentication:TokenKey"] ?? "Not working key";
+            builder.Services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new()
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(tokenTokey)),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                };
+            });
+            builder.Services.AddSerilog();
+
+
+            builder.Services.AddScoped<IArtistService, ArtistService>();
+            builder.Services.AddScoped<ISongService, SongService>();
+
+            builder.Services.AddAuthorization();
+            builder.Services.AddSingleton<IJWTAuthenticationsManager>(new JWTAuthenticationsManager(tokenTokey));
+
+
             var app = builder.Build();
+
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -36,6 +71,7 @@ namespace SongDiaryWebApi
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

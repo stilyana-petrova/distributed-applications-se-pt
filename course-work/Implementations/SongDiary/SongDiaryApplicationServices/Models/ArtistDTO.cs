@@ -6,16 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SongDiaryData.Entities
+namespace SongDiaryApplicationServices.Models
 {
-    public class Artist:BaseEntity
+    public class ArtistDTO
     {
+        public int Id { get; set; }
         [MaxLength(50)]
-        public required string Name { get; set; }
+        public string Name { get; set; }
         [MaxLength(1000)]
-        public string? Bio { get; set; } 
+        public string? Bio { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public Positions? Positions { get; set; }
-        public virtual ICollection<Song>? Songs { get; set; }
+        public Positions Positions { get; set; }
     }
 }
