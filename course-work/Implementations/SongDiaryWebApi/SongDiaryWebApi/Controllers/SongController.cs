@@ -6,16 +6,31 @@ using SongDiaryData.Entities;
 
 namespace SongDiaryWebApi.Controllers
 {
+    /// <summary>
+    /// Controller for managing songs.
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class SongController : ControllerBase
     {
+        /// <summary>
+        /// injects the <see cref="ISongService"/> service
+        /// </summary>
         private readonly ISongService _songService;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SongController"/> class.
+        /// </summary>
+        /// <param name="songService">Service for handling song operations</param>
         public SongController(ISongService songService)
         {
             _songService = songService;
         }
+
+        /// <summary>
+        /// Retrieves all songs
+        /// </summary>
+        /// <returns>list of songs</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Song>>> GetSongs()
         {
@@ -23,6 +38,11 @@ namespace SongDiaryWebApi.Controllers
             return Ok(songs);
         }
 
+        /// <summary>
+        /// Retrieves a song by id
+        /// </summary>
+        /// <param name="id">The song id</param>
+        /// <returns>The requested song</returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Song>> GetSongById(int id)
         {
@@ -31,8 +51,11 @@ namespace SongDiaryWebApi.Controllers
             return Ok(song);
         }
 
-
-
+        /// <summary>
+        /// Creates a new song
+        /// </summary>
+        /// <param name="song">The song details</param>
+        /// <returns>The created song</returns>
         [HttpPost]
         public async Task<ActionResult<Song>> Create([FromBody] Song song)
         {
@@ -40,6 +63,12 @@ namespace SongDiaryWebApi.Controllers
             return CreatedAtAction(nameof(GetSongById), new { id = createdSong.Id }, createdSong);
         }
 
+        /// <summary>
+        /// Updates an existing song
+        /// </summary>
+        /// <param name="id">The song id</param>
+        /// <param name="song">Updated song details.</param>
+        /// <returns>No content if update is successful, if not - Not Found</returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Song song)
         {
@@ -48,6 +77,11 @@ namespace SongDiaryWebApi.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Deletes a song by id
+        /// </summary>
+        /// <param name="id">the song id</param>
+        /// <returns>No content if deletion is successful, if it's unsuccessful - Not Found</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -56,6 +90,12 @@ namespace SongDiaryWebApi.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Searches songs by title or artist
+        /// </summary>
+        /// <param name="title">Search by title</param>
+        /// <param name="artist">Search by artist</param>
+        /// <returns>List of matching songs</returns>
         [HttpGet("search")]
         public ActionResult<List<Song>> SearchSongs([FromQuery] string title, [FromQuery] string artist)
         {

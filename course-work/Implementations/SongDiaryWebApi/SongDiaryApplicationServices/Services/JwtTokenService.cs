@@ -11,15 +11,31 @@ using System.Threading.Tasks;
 
 namespace SongDiaryApplicationServices.Services
 {
+    /// <summary>
+    /// Service for generating JWT authentication tokens.
+    /// </summary>
     public class JwtTokenService: IJwtTokenService
     {
+        /// <summary>
+        /// Configuration settings for JWT.
+        /// </summary>
         private readonly IConfiguration _config;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="JwtTokenService"/> class.
+        /// </summary>
+        /// <param name="config">The application configuration containing JWT settings.</param>
         public JwtTokenService(IConfiguration config)
         {
             _config = config;
         }
 
+        /// <summary>
+        /// Generates a JWT token for the specified user.
+        /// </summary>
+        /// <param name="username">The username for whom the token is generated</param>
+        /// <param name="role">the role of the user</param>
+        /// <returns>A JWT token as a string</returns>
         public string GenerateToken(string username, string role)
         {
             var jwtSettings = _config.GetSection("JwtSettings");

@@ -6,17 +6,31 @@ using SongDiaryData.Entities;
 
 namespace SongDiaryWebApi.Controllers
 {
+    /// <summary>
+    /// API controller for managing artists
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class ArtistController : ControllerBase
     {
+        /// <summary>
+        /// Injects the <see cref="IArtistService"/> service
+        /// </summary>
         private readonly IArtistService _artistService;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ArtistController"/> class.
+        /// </summary>
+        /// <param name="artistService">Service for handling artist operations</param>
         public ArtistController(IArtistService artistService)
         {
             _artistService = artistService;
         }
 
+        /// <summary>
+        /// Retrieves all artists
+        /// </summary>
+        /// <returns>a list of artists</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Artist>>> GetArtists()
         {
@@ -24,6 +38,11 @@ namespace SongDiaryWebApi.Controllers
             return Ok(artists);
         }
 
+        /// <summary>
+        /// Retrieves artist by specific id
+        /// </summary>
+        /// <param name="id">the id of the artist</param>
+        /// <returns>The artist with the specific id</returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<Artist>> GetById(int id)
         {
@@ -32,6 +51,11 @@ namespace SongDiaryWebApi.Controllers
             return Ok(artist);
         }
 
+        /// <summary>
+        /// Creates a new artist
+        /// </summary>
+        /// <param name="artist">The artist data</param>
+        /// <returns>The created artist</returns>
         [HttpPost]
         public async Task<ActionResult<Artist>> Create([FromBody] Artist artist)
         {
@@ -39,6 +63,12 @@ namespace SongDiaryWebApi.Controllers
             return CreatedAtAction(nameof(GetById), new { id = createdArtist.Id }, createdArtist);
         }
 
+        /// <summary>
+        /// Updates an existing artist
+        /// </summary>
+        /// <param name="id">the id of the artist</param>
+        /// <param name="artist">Updated artist information</param>
+        /// <returns>No content if the update is successful and Not Found when cannot update</returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Artist artist)
         {
@@ -46,6 +76,12 @@ namespace SongDiaryWebApi.Controllers
             if (!updated) return NotFound();
             return NoContent();
         }
+
+        /// <summary>
+        /// Delete an artist by id
+        /// </summary>
+        /// <param name="id">the id of the artist to delete</param>
+        /// <returns>No content if the deletion is successful and Not Found when cannot delete</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -54,6 +90,11 @@ namespace SongDiaryWebApi.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// searches for artists by name
+        /// </summary>
+        /// <param name="name">the name or part of the name</param>
+        /// <returns>A list of matching artists</returns>
         [HttpGet("search")]
         public ActionResult<List<Artist?>> SearchArtists([FromQuery] string name)
         {
