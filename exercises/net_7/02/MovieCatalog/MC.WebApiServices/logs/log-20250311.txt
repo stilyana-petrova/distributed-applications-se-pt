@@ -1,0 +1,288 @@
+2025-03-11 13:01:14.735 +02:00 [DBG] Application is starting
+2025-03-11 13:01:15.199 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-11 13:01:15.302 +02:00 [DBG] Hosting starting
+2025-03-11 13:01:15.331 +02:00 [INF] User profile is available. Using 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-11 13:01:15.343 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-11a327d1-a861-450d-b863-e841b1f18872.xml'.
+2025-03-11 13:01:15.356 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-21046fda-245e-4ca5-a1a0-84244dfe14f5.xml'.
+2025-03-11 13:01:15.360 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-22c85294-13da-45cc-9150-044cf4c5fe09.xml'.
+2025-03-11 13:01:15.363 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-3b52fd3e-bfaa-40ec-8ade-de6e3a760245.xml'.
+2025-03-11 13:01:15.366 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-3c501b58-e305-4524-9b71-b0f490efc326.xml'.
+2025-03-11 13:01:15.369 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-91f88bfc-a8e1-4a78-99d9-99cb9296e861.xml'.
+2025-03-11 13:01:15.372 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-f3623884-576d-44e9-938b-1953da360b0b.xml'.
+2025-03-11 13:01:15.387 +02:00 [DBG] Found key {11a327d1-a861-450d-b863-e841b1f18872}.
+2025-03-11 13:01:15.399 +02:00 [DBG] Found key {21046fda-245e-4ca5-a1a0-84244dfe14f5}.
+2025-03-11 13:01:15.402 +02:00 [DBG] Found key {22c85294-13da-45cc-9150-044cf4c5fe09}.
+2025-03-11 13:01:15.405 +02:00 [DBG] Found key {3b52fd3e-bfaa-40ec-8ade-de6e3a760245}.
+2025-03-11 13:01:15.411 +02:00 [DBG] Found key {3c501b58-e305-4524-9b71-b0f490efc326}.
+2025-03-11 13:01:15.416 +02:00 [DBG] Found key {91f88bfc-a8e1-4a78-99d9-99cb9296e861}.
+2025-03-11 13:01:15.420 +02:00 [DBG] Found key {f3623884-576d-44e9-938b-1953da360b0b}.
+2025-03-11 13:01:15.443 +02:00 [DBG] Considering key {22c85294-13da-45cc-9150-044cf4c5fe09} with expiration date 2025-06-08 19:26:13Z as default key.
+2025-03-11 13:01:15.450 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-11 13:01:15.459 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-03-11 13:01:15.463 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-11 13:01:15.479 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-03-11 13:01:15.483 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-03-11 13:01:15.488 +02:00 [DBG] Using key {22c85294-13da-45cc-9150-044cf4c5fe09} as the default key.
+2025-03-11 13:01:15.491 +02:00 [DBG] Key ring with default key {22c85294-13da-45cc-9150-044cf4c5fe09} was loaded during application startup.
+2025-03-11 13:01:15.694 +02:00 [INF] Now listening on: https://localhost:64264
+2025-03-11 13:01:15.696 +02:00 [INF] Now listening on: http://localhost:64265
+2025-03-11 13:01:15.698 +02:00 [DBG] Loaded hosting startup assembly MC.WebApiServices
+2025-03-11 13:01:15.700 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-03-11 13:01:15.702 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-11 13:01:15.704 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-11 13:01:15.888 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-11 13:01:15.895 +02:00 [INF] Hosting environment: Development
+2025-03-11 13:01:15.899 +02:00 [INF] Content root path: C:\Users\Stilly\Documents\Stelly\Uni\Distributed Applications\distributed-applications-se-pt\exercises\net_7\02\MovieCatalog\MC.WebApiServices
+2025-03-11 13:01:15.908 +02:00 [DBG] Hosting started
+2025-03-11 13:01:16.298 +02:00 [DBG] Connection id "0HNB0HG5PP8GG" received FIN.
+2025-03-11 13:01:16.311 +02:00 [DBG] Connection id "0HNB0HG5PP8GG" accepted.
+2025-03-11 13:01:16.315 +02:00 [DBG] Connection id "0HNB0HG5PP8GG" started.
+2025-03-11 13:01:16.364 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-11 13:01:16.443 +02:00 [DBG] Connection id "0HNB0HG5PP8GG" stopped.
+2025-03-11 13:01:16.449 +02:00 [DBG] Connection id "0HNB0HG5PP8GG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 13:01:17.031 +02:00 [DBG] Connection id "0HNB0HG5PP8GH" accepted.
+2025-03-11 13:01:17.050 +02:00 [DBG] Connection id "0HNB0HG5PP8GH" started.
+2025-03-11 13:01:17.153 +02:00 [DBG] Connection 0HNB0HG5PP8GH established using the following protocol: "Tls12"
+2025-03-11 13:01:17.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:64264/ - -
+2025-03-11 13:01:17.434 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-11 13:01:17.458 +02:00 [DBG] No candidates found for the request path '/'
+2025-03-11 13:01:17.461 +02:00 [DBG] Request did not match any endpoints
+2025-03-11 13:01:17.469 +02:00 [DBG] The request path  does not match the path filter
+2025-03-11 13:01:17.568 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-03-11 13:01:17.577 +02:00 [INF] Request finished HTTP/2 GET https://localhost:64264/ - - - 404 0 - 343.0229ms
+2025-03-11 13:01:20.156 +02:00 [DBG] Connection id "0HNB0HG5PP8GH" received FIN.
+2025-03-11 13:01:20.163 +02:00 [DBG] Connection id "0HNB0HG5PP8GH" is closed. The last processed stream ID was 1.
+2025-03-11 13:01:20.165 +02:00 [DBG] The connection queue processing loop for 0HNB0HG5PP8GH completed.
+2025-03-11 13:01:20.166 +02:00 [DBG] Connection id "0HNB0HG5PP8GH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 13:01:20.171 +02:00 [DBG] Connection id "0HNB0HG5PP8GH" stopped.
+2025-03-11 13:01:54.365 +02:00 [DBG] Connection id "0HNB0HG5PP8GI" accepted.
+2025-03-11 13:01:54.368 +02:00 [DBG] Connection id "0HNB0HG5PP8GI" started.
+2025-03-11 13:01:54.378 +02:00 [DBG] Connection 0HNB0HG5PP8GI established using the following protocol: "Tls12"
+2025-03-11 13:01:54.383 +02:00 [INF] Request starting HTTP/2 GET https://localhost:64264/ - -
+2025-03-11 13:01:54.388 +02:00 [DBG] No candidates found for the request path '/'
+2025-03-11 13:01:54.391 +02:00 [DBG] Request did not match any endpoints
+2025-03-11 13:01:54.393 +02:00 [DBG] The request path  does not match the path filter
+2025-03-11 13:01:54.398 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-03-11 13:01:54.401 +02:00 [INF] Request finished HTTP/2 GET https://localhost:64264/ - - - 404 0 - 17.8501ms
+2025-03-11 13:02:00.220 +02:00 [DBG] Connection id "0HNB0HG5PP8GI" received FIN.
+2025-03-11 13:02:00.222 +02:00 [DBG] Connection id "0HNB0HG5PP8GI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 13:02:00.222 +02:00 [DBG] Connection id "0HNB0HG5PP8GI" is closed. The last processed stream ID was 1.
+2025-03-11 13:02:00.229 +02:00 [DBG] The connection queue processing loop for 0HNB0HG5PP8GI completed.
+2025-03-11 13:02:00.231 +02:00 [DBG] Connection id "0HNB0HG5PP8GI" stopped.
+2025-03-11 13:02:13.331 +02:00 [DBG] Application is starting
+2025-03-11 13:02:14.538 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-11 13:02:14.624 +02:00 [DBG] Hosting starting
+2025-03-11 13:02:14.700 +02:00 [INF] User profile is available. Using 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-11 13:02:14.712 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-11a327d1-a861-450d-b863-e841b1f18872.xml'.
+2025-03-11 13:02:14.736 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-21046fda-245e-4ca5-a1a0-84244dfe14f5.xml'.
+2025-03-11 13:02:14.739 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-22c85294-13da-45cc-9150-044cf4c5fe09.xml'.
+2025-03-11 13:02:14.742 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-3b52fd3e-bfaa-40ec-8ade-de6e3a760245.xml'.
+2025-03-11 13:02:14.744 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-3c501b58-e305-4524-9b71-b0f490efc326.xml'.
+2025-03-11 13:02:14.746 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-91f88bfc-a8e1-4a78-99d9-99cb9296e861.xml'.
+2025-03-11 13:02:14.748 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-f3623884-576d-44e9-938b-1953da360b0b.xml'.
+2025-03-11 13:02:14.758 +02:00 [DBG] Found key {11a327d1-a861-450d-b863-e841b1f18872}.
+2025-03-11 13:02:14.769 +02:00 [DBG] Found key {21046fda-245e-4ca5-a1a0-84244dfe14f5}.
+2025-03-11 13:02:14.771 +02:00 [DBG] Found key {22c85294-13da-45cc-9150-044cf4c5fe09}.
+2025-03-11 13:02:14.773 +02:00 [DBG] Found key {3b52fd3e-bfaa-40ec-8ade-de6e3a760245}.
+2025-03-11 13:02:14.775 +02:00 [DBG] Found key {3c501b58-e305-4524-9b71-b0f490efc326}.
+2025-03-11 13:02:14.777 +02:00 [DBG] Found key {91f88bfc-a8e1-4a78-99d9-99cb9296e861}.
+2025-03-11 13:02:14.779 +02:00 [DBG] Found key {f3623884-576d-44e9-938b-1953da360b0b}.
+2025-03-11 13:02:14.789 +02:00 [DBG] Considering key {22c85294-13da-45cc-9150-044cf4c5fe09} with expiration date 2025-06-08 19:26:13Z as default key.
+2025-03-11 13:02:14.795 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-11 13:02:14.801 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-03-11 13:02:14.804 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-11 13:02:14.811 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-03-11 13:02:14.815 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-03-11 13:02:14.819 +02:00 [DBG] Using key {22c85294-13da-45cc-9150-044cf4c5fe09} as the default key.
+2025-03-11 13:02:14.822 +02:00 [DBG] Key ring with default key {22c85294-13da-45cc-9150-044cf4c5fe09} was loaded during application startup.
+2025-03-11 13:02:15.265 +02:00 [INF] Now listening on: https://localhost:64264
+2025-03-11 13:02:15.267 +02:00 [INF] Now listening on: http://localhost:64265
+2025-03-11 13:02:15.269 +02:00 [DBG] Loaded hosting startup assembly MC.WebApiServices
+2025-03-11 13:02:15.271 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-03-11 13:02:15.273 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-11 13:02:15.275 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-11 13:02:15.397 +02:00 [DBG] Connection id "0HNB0HGNDCS3L" accepted.
+2025-03-11 13:02:15.401 +02:00 [DBG] Connection id "0HNB0HGNDCS3L" started.
+2025-03-11 13:02:15.402 +02:00 [DBG] Connection id "0HNB0HGNDCS3M" accepted.
+2025-03-11 13:02:15.405 +02:00 [DBG] Connection id "0HNB0HGNDCS3M" started.
+2025-03-11 13:02:15.543 +02:00 [DBG] Connection id "0HNB0HGNDCS3L" received FIN.
+2025-03-11 13:02:15.543 +02:00 [DBG] Connection id "0HNB0HGNDCS3M" received FIN.
+2025-03-11 13:02:15.563 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-11 13:02:15.728 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-11 13:02:15.941 +02:00 [INF] Hosting environment: Development
+2025-03-11 13:02:15.563 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-11 13:02:15.948 +02:00 [DBG] Connection id "0HNB0HGNDCS3L" stopped.
+2025-03-11 13:02:15.943 +02:00 [INF] Content root path: C:\Users\Stilly\Documents\Stelly\Uni\Distributed Applications\distributed-applications-se-pt\exercises\net_7\02\MovieCatalog\MC.WebApiServices
+2025-03-11 13:02:16.039 +02:00 [DBG] Hosting started
+2025-03-11 13:02:16.033 +02:00 [DBG] Connection id "0HNB0HGNDCS3L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 13:02:16.020 +02:00 [DBG] Connection id "0HNB0HGNDCS3M" stopped.
+2025-03-11 13:02:16.054 +02:00 [DBG] Connection id "0HNB0HGNDCS3M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 13:02:16.533 +02:00 [DBG] Connection id "0HNB0HGNDCS3N" accepted.
+2025-03-11 13:02:16.552 +02:00 [DBG] Connection id "0HNB0HGNDCS3N" started.
+2025-03-11 13:02:16.706 +02:00 [DBG] Connection 0HNB0HGNDCS3N established using the following protocol: "Tls12"
+2025-03-11 13:02:16.852 +02:00 [INF] Request starting HTTP/2 GET https://localhost:64264/ - -
+2025-03-11 13:02:17.073 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-11 13:02:17.109 +02:00 [DBG] No candidates found for the request path '/'
+2025-03-11 13:02:17.112 +02:00 [DBG] Request did not match any endpoints
+2025-03-11 13:02:17.122 +02:00 [DBG] The request path  does not match the path filter
+2025-03-11 13:02:17.482 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-03-11 13:02:17.493 +02:00 [INF] Request finished HTTP/2 GET https://localhost:64264/ - - - 404 0 - 643.6266ms
+2025-03-11 13:02:20.240 +02:00 [DBG] Connection id "0HNB0HGNDCS3N" received FIN.
+2025-03-11 13:02:20.252 +02:00 [DBG] Connection id "0HNB0HGNDCS3N" is closed. The last processed stream ID was 1.
+2025-03-11 13:02:20.252 +02:00 [DBG] The connection queue processing loop for 0HNB0HGNDCS3N completed.
+2025-03-11 13:02:20.256 +02:00 [DBG] Connection id "0HNB0HGNDCS3N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 13:02:20.271 +02:00 [DBG] Connection id "0HNB0HGNDCS3N" stopped.
+2025-03-11 15:47:52.206 +02:00 [DBG] Application is starting
+2025-03-11 15:47:52.501 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-11 15:47:52.571 +02:00 [DBG] Hosting starting
+2025-03-11 15:47:52.586 +02:00 [INF] User profile is available. Using 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-11 15:47:52.594 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-11a327d1-a861-450d-b863-e841b1f18872.xml'.
+2025-03-11 15:47:52.601 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-21046fda-245e-4ca5-a1a0-84244dfe14f5.xml'.
+2025-03-11 15:47:52.604 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-22c85294-13da-45cc-9150-044cf4c5fe09.xml'.
+2025-03-11 15:47:52.606 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-3b52fd3e-bfaa-40ec-8ade-de6e3a760245.xml'.
+2025-03-11 15:47:52.607 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-3c501b58-e305-4524-9b71-b0f490efc326.xml'.
+2025-03-11 15:47:52.609 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-91f88bfc-a8e1-4a78-99d9-99cb9296e861.xml'.
+2025-03-11 15:47:52.611 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-f3623884-576d-44e9-938b-1953da360b0b.xml'.
+2025-03-11 15:47:52.618 +02:00 [DBG] Found key {11a327d1-a861-450d-b863-e841b1f18872}.
+2025-03-11 15:47:52.623 +02:00 [DBG] Found key {21046fda-245e-4ca5-a1a0-84244dfe14f5}.
+2025-03-11 15:47:52.625 +02:00 [DBG] Found key {22c85294-13da-45cc-9150-044cf4c5fe09}.
+2025-03-11 15:47:52.627 +02:00 [DBG] Found key {3b52fd3e-bfaa-40ec-8ade-de6e3a760245}.
+2025-03-11 15:47:52.629 +02:00 [DBG] Found key {3c501b58-e305-4524-9b71-b0f490efc326}.
+2025-03-11 15:47:52.630 +02:00 [DBG] Found key {91f88bfc-a8e1-4a78-99d9-99cb9296e861}.
+2025-03-11 15:47:52.632 +02:00 [DBG] Found key {f3623884-576d-44e9-938b-1953da360b0b}.
+2025-03-11 15:47:52.640 +02:00 [DBG] Considering key {22c85294-13da-45cc-9150-044cf4c5fe09} with expiration date 2025-06-08 19:26:13Z as default key.
+2025-03-11 15:47:52.645 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-11 15:47:52.650 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-03-11 15:47:52.653 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-11 15:47:52.659 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-03-11 15:47:52.663 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-03-11 15:47:52.666 +02:00 [DBG] Using key {22c85294-13da-45cc-9150-044cf4c5fe09} as the default key.
+2025-03-11 15:47:52.668 +02:00 [DBG] Key ring with default key {22c85294-13da-45cc-9150-044cf4c5fe09} was loaded during application startup.
+2025-03-11 15:47:52.809 +02:00 [INF] Now listening on: https://localhost:64264
+2025-03-11 15:47:52.811 +02:00 [INF] Now listening on: http://localhost:64265
+2025-03-11 15:47:52.812 +02:00 [DBG] Loaded hosting startup assembly MC.WebApiServices
+2025-03-11 15:47:52.814 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-03-11 15:47:52.815 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-11 15:47:52.817 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-11 15:47:52.938 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-11 15:47:52.940 +02:00 [INF] Hosting environment: Development
+2025-03-11 15:47:52.941 +02:00 [INF] Content root path: C:\Users\Stilly\Documents\Stelly\Uni\Distributed Applications\distributed-applications-se-pt\exercises\net_7\02\MovieCatalog\MC.WebApiServices
+2025-03-11 15:47:52.943 +02:00 [DBG] Hosting started
+2025-03-11 15:47:53.122 +02:00 [DBG] Connection id "0HNB0KD92TSCO" received FIN.
+2025-03-11 15:47:53.131 +02:00 [DBG] Connection id "0HNB0KD92TSCO" accepted.
+2025-03-11 15:47:53.135 +02:00 [DBG] Connection id "0HNB0KD92TSCO" started.
+2025-03-11 15:47:53.160 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-11 15:47:53.186 +02:00 [DBG] Connection id "0HNB0KD92TSCO" stopped.
+2025-03-11 15:47:53.191 +02:00 [DBG] Connection id "0HNB0KD92TSCO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 15:47:53.416 +02:00 [DBG] Connection id "0HNB0KD92TSCP" accepted.
+2025-03-11 15:47:53.420 +02:00 [DBG] Connection id "0HNB0KD92TSCP" started.
+2025-03-11 15:47:53.491 +02:00 [DBG] Connection 0HNB0KD92TSCP established using the following protocol: "Tls12"
+2025-03-11 15:47:53.581 +02:00 [INF] Request starting HTTP/2 GET https://localhost:64264/ - -
+2025-03-11 15:47:53.705 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-11 15:47:53.731 +02:00 [DBG] No candidates found for the request path '/'
+2025-03-11 15:47:53.734 +02:00 [DBG] Request did not match any endpoints
+2025-03-11 15:47:53.745 +02:00 [DBG] The request path  does not match the path filter
+2025-03-11 15:47:53.784 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-03-11 15:47:53.795 +02:00 [INF] Request finished HTTP/2 GET https://localhost:64264/ - - - 404 0 - 217.6110ms
+2025-03-11 15:47:58.357 +02:00 [DBG] Connection id "0HNB0KD92TSCP" received FIN.
+2025-03-11 15:47:58.399 +02:00 [DBG] The connection queue processing loop for 0HNB0KD92TSCP completed.
+2025-03-11 15:47:58.402 +02:00 [DBG] Connection id "0HNB0KD92TSCP" is closed. The last processed stream ID was 1.
+2025-03-11 15:47:58.405 +02:00 [DBG] Connection id "0HNB0KD92TSCP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 15:47:58.416 +02:00 [DBG] Connection id "0HNB0KD92TSCP" stopped.
+2025-03-11 15:48:48.975 +02:00 [DBG] Config reload token fired. Checking for changes...
+2025-03-11 15:48:49.241 +02:00 [DBG] Config reload token fired. Checking for changes...
+2025-03-11 15:48:57.057 +02:00 [DBG] Application is starting
+2025-03-11 15:48:57.333 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-03-11 15:48:57.391 +02:00 [DBG] Hosting starting
+2025-03-11 15:48:57.406 +02:00 [INF] User profile is available. Using 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-11 15:48:57.414 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-11a327d1-a861-450d-b863-e841b1f18872.xml'.
+2025-03-11 15:48:57.421 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-21046fda-245e-4ca5-a1a0-84244dfe14f5.xml'.
+2025-03-11 15:48:57.423 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-22c85294-13da-45cc-9150-044cf4c5fe09.xml'.
+2025-03-11 15:48:57.425 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-3b52fd3e-bfaa-40ec-8ade-de6e3a760245.xml'.
+2025-03-11 15:48:57.427 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-3c501b58-e305-4524-9b71-b0f490efc326.xml'.
+2025-03-11 15:48:57.429 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-91f88bfc-a8e1-4a78-99d9-99cb9296e861.xml'.
+2025-03-11 15:48:57.431 +02:00 [DBG] Reading data from file 'C:\Users\Stilly\AppData\Local\ASP.NET\DataProtection-Keys\key-f3623884-576d-44e9-938b-1953da360b0b.xml'.
+2025-03-11 15:48:57.437 +02:00 [DBG] Found key {11a327d1-a861-450d-b863-e841b1f18872}.
+2025-03-11 15:48:57.442 +02:00 [DBG] Found key {21046fda-245e-4ca5-a1a0-84244dfe14f5}.
+2025-03-11 15:48:57.444 +02:00 [DBG] Found key {22c85294-13da-45cc-9150-044cf4c5fe09}.
+2025-03-11 15:48:57.446 +02:00 [DBG] Found key {3b52fd3e-bfaa-40ec-8ade-de6e3a760245}.
+2025-03-11 15:48:57.448 +02:00 [DBG] Found key {3c501b58-e305-4524-9b71-b0f490efc326}.
+2025-03-11 15:48:57.449 +02:00 [DBG] Found key {91f88bfc-a8e1-4a78-99d9-99cb9296e861}.
+2025-03-11 15:48:57.451 +02:00 [DBG] Found key {f3623884-576d-44e9-938b-1953da360b0b}.
+2025-03-11 15:48:57.459 +02:00 [DBG] Considering key {22c85294-13da-45cc-9150-044cf4c5fe09} with expiration date 2025-06-08 19:26:13Z as default key.
+2025-03-11 15:48:57.464 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-11 15:48:57.469 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-03-11 15:48:57.472 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-03-11 15:48:57.478 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-03-11 15:48:57.481 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-03-11 15:48:57.484 +02:00 [DBG] Using key {22c85294-13da-45cc-9150-044cf4c5fe09} as the default key.
+2025-03-11 15:48:57.487 +02:00 [DBG] Key ring with default key {22c85294-13da-45cc-9150-044cf4c5fe09} was loaded during application startup.
+2025-03-11 15:48:57.616 +02:00 [INF] Now listening on: https://localhost:64264
+2025-03-11 15:48:57.618 +02:00 [INF] Now listening on: http://localhost:64265
+2025-03-11 15:48:57.620 +02:00 [DBG] Loaded hosting startup assembly MC.WebApiServices
+2025-03-11 15:48:57.621 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-03-11 15:48:57.623 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-03-11 15:48:57.625 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-03-11 15:48:57.749 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-11 15:48:57.751 +02:00 [INF] Hosting environment: Development
+2025-03-11 15:48:57.753 +02:00 [INF] Content root path: C:\Users\Stilly\Documents\Stelly\Uni\Distributed Applications\distributed-applications-se-pt\exercises\net_7\02\MovieCatalog\MC.WebApiServices
+2025-03-11 15:48:57.755 +02:00 [DBG] Hosting started
+2025-03-11 15:48:57.992 +02:00 [DBG] Connection id "0HNB0KDSDIOFR" accepted.
+2025-03-11 15:48:57.992 +02:00 [DBG] Connection id "0HNB0KDSDIOFS" accepted.
+2025-03-11 15:48:57.996 +02:00 [DBG] Connection id "0HNB0KDSDIOFR" started.
+2025-03-11 15:48:57.997 +02:00 [DBG] Connection id "0HNB0KDSDIOFS" started.
+2025-03-11 15:48:57.998 +02:00 [DBG] Connection id "0HNB0KDSDIOFR" received FIN.
+2025-03-11 15:48:57.998 +02:00 [DBG] Connection id "0HNB0KDSDIOFS" received FIN.
+2025-03-11 15:48:58.019 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-11 15:48:58.019 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-03-11 15:48:58.050 +02:00 [DBG] Connection id "0HNB0KDSDIOFR" stopped.
+2025-03-11 15:48:58.050 +02:00 [DBG] Connection id "0HNB0KDSDIOFS" stopped.
+2025-03-11 15:48:58.054 +02:00 [DBG] Connection id "0HNB0KDSDIOFR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 15:48:58.054 +02:00 [DBG] Connection id "0HNB0KDSDIOFS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 15:48:58.158 +02:00 [DBG] Connection id "0HNB0KDSDIOFT" accepted.
+2025-03-11 15:48:58.163 +02:00 [DBG] Connection id "0HNB0KDSDIOFT" started.
+2025-03-11 15:48:58.238 +02:00 [DBG] Connection 0HNB0KDSDIOFT established using the following protocol: "Tls12"
+2025-03-11 15:48:58.296 +02:00 [INF] Request starting HTTP/2 GET https://localhost:64264/ - -
+2025-03-11 15:48:58.379 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-03-11 15:48:58.401 +02:00 [DBG] No candidates found for the request path '/'
+2025-03-11 15:48:58.403 +02:00 [DBG] Request did not match any endpoints
+2025-03-11 15:48:58.410 +02:00 [DBG] The request path  does not match the path filter
+2025-03-11 15:48:58.435 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-03-11 15:48:58.441 +02:00 [INF] Request finished HTTP/2 GET https://localhost:64264/ - - - 404 0 - 147.6845ms
+2025-03-11 15:49:00.625 +02:00 [INF] Request starting HTTP/2 GET https://localhost:64264/ - -
+2025-03-11 15:49:00.633 +02:00 [DBG] No candidates found for the request path '/'
+2025-03-11 15:49:00.635 +02:00 [DBG] Request did not match any endpoints
+2025-03-11 15:49:00.637 +02:00 [DBG] The request path  does not match the path filter
+2025-03-11 15:49:00.640 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-03-11 15:49:00.643 +02:00 [INF] Request finished HTTP/2 GET https://localhost:64264/ - - - 404 0 - 18.0511ms
+2025-03-11 15:49:01.019 +02:00 [DBG] Connection id "0HNB0KDSDIOFT" received FIN.
+2025-03-11 15:49:01.023 +02:00 [DBG] The connection queue processing loop for 0HNB0KDSDIOFT completed.
+2025-03-11 15:49:01.027 +02:00 [DBG] Connection id "0HNB0KDSDIOFT" is closed. The last processed stream ID was 3.
+2025-03-11 15:49:01.030 +02:00 [DBG] Connection id "0HNB0KDSDIOFT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-03-11 15:49:01.046 +02:00 [DBG] Connection id "0HNB0KDSDIOFT" stopped.
