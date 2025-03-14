@@ -1,4 +1,5 @@
-﻿using SongDiaryData.Entities;
+﻿using SongDiaryApplicationServices.Models;
+using SongDiaryData.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,8 @@ namespace SongDiaryApplicationServices.Interfaces
         bool Delete(int id);
 
         List<Artist?> GetArtists(string searchByArtistName);
+        Task<PagedResult<ArtistDTO>> GetPagedArtists(int page, int size);
+
 
     }
 }

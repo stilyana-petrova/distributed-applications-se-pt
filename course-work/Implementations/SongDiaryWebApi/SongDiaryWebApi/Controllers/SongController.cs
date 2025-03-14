@@ -102,5 +102,17 @@ namespace SongDiaryWebApi.Controllers
             var songs = _songService.GetSongs(title, artist);
             return Ok(songs);
         }
+
+        [HttpGet("paged")]
+        public async Task<IActionResult> GetPagedSongs([FromQuery] int page = 1, [FromQuery] int size = 3)
+        {
+            if (page < 1 || size < 1)
+            {
+                return BadRequest("Page number and page size must be greater than 0.");
+            }
+
+            var result = await _songService.GetSongsAsync(page, size);
+            return Ok(result);
+        }
     }
 }

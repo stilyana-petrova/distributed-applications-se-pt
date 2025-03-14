@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SongDiaryApplicationServices.Interfaces;
+using SongDiaryApplicationServices.Services;
 using SongDiaryData.Entities;
 
 namespace SongDiaryWebApi.Controllers
@@ -100,6 +101,18 @@ namespace SongDiaryWebApi.Controllers
         {
             var artists = _artistService.GetArtists(name);
             return Ok(artists);
+        }
+
+        [HttpGet("paged")]
+        public async Task<IActionResult> GetPagedArtists([FromQuery] int page = 1, [FromQuery] int size = 3)
+        {
+            if (page < 1 || size < 1)
+            {
+                return BadRequest("Page number and page size must be greater than 0.");
+            }
+
+            var result = await _artistService.GetPagedArtists(page, size);
+            return Ok(result);
         }
     }
 }

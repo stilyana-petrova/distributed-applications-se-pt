@@ -1,4 +1,6 @@
-﻿using SongDiaryApplicationServices.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using SongDiaryApplicationServices.Interfaces;
+using SongDiaryApplicationServices.Models;
 using SongDiaryData.Context;
 using SongDiaryData.Entities;
 using System;
@@ -123,6 +125,29 @@ namespace SongDiaryApplicationServices.Services
                 artists = artists.Where(x => x.Name.ToLower().Contains(searchByArtistName.ToLower())).ToList();
             }
             return artists;
+        }
+
+        public async Task<PagedResult<ArtistDTO>> GetPagedArtists(int page, int size)
+        {
+            var query = _context.Artists.AsQueryable();
+            var totalCount = await query.CountAsync();
+            var artists = await query.Skip((page - 1) * size).Take(size)
+                .Select(a => new ArtistDTO
+                {
+                    Id = a.Id,
+                    Name = a.Name,
+                    Bio = a.Bio,
+                    DateOfBirth = a.DateOfBirth,
+                    Positions = a.Position
+                }).ToListAsync();
+
+            return new PagedResult<ArtistDTO>
+            {
+                Items = artists,
+                TotalCount = totalCount,
+                PageNumber = page,
+                PageSize = size
+            };
         }
     }
 }

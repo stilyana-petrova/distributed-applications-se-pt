@@ -1,4 +1,5 @@
-﻿using SongDiaryData.Entities;
+﻿using SongDiaryApplicationServices.Models;
+using SongDiaryData.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace SongDiaryApplicationServices.Interfaces
         Task<bool> Update(int id, Song updatedSong);
         Task<bool> Delete(int id);
         List<Song> GetSongs(string searchByTitle, string searchByArtist);
+        Task<PagedResult<SongDTO>> GetSongsAsync(int page, int size);
+
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SongDiaryApplicationServices.Interfaces;
+using SongDiaryApplicationServices.Models;
 using SongDiaryData.Context;
 using SongDiaryData.Entities;
 using System;
@@ -117,6 +118,32 @@ namespace SongDiaryApplicationServices.Services
 
             _context.Songs.Update(song);
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<PagedResult<SongDTO>> GetSongsAsync(int page, int size)
+        {
+            var query = _context.Songs.AsQueryable();
+
+            int totalCount = await query.CountAsync();
+
+            var songs = await query
+                .Skip((page - 1) * size)
+                .Take(size)
+                .Select(s => new SongDTO
+                {
+                    Id = s.Id,
+                    Title = s.Title,
+                    ArtistName=s.Artist.Name // Assuming a relationship
+                })
+            .ToListAsync();
+
+            return new PagedResult<SongDTO>
+            {
+                Items = songs,
+                TotalCount = totalCount,
+                PageNumber = page,
+                PageSize = size
+            };
         }
     }
 }
