@@ -103,6 +103,12 @@ namespace SongDiaryWebApi.Controllers
             return Ok(songs);
         }
 
+        /// <summary>
+        /// Retrieves paginated songs
+        /// </summary>
+        /// <param name="page">The page number (must be greater than 0)</param>
+        /// <param name="size">The page size (musit be greater than 0)</param>
+        /// <returns>A paginated list of songs</returns>
         [HttpGet("paged")]
         public async Task<IActionResult> GetPagedSongs([FromQuery] int page = 1, [FromQuery] int size = 3)
         {
